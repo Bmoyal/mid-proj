@@ -1,16 +1,108 @@
-
-h1{
-    color: yellowgreen;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-h2{
-    color: aquamarine;
+body{
+    direction: rtl;
+    font-family: Arial, Helvetica, sans-serif ;
+    padding-bottom: 38px;
+    background: #fff;
 }
 
-h3{
-    color: blueviolet;
+.top_header{
+    border: solid 0.5px yellow;
+    padding: 10px;
 }
 
-h4{
-    color: gold;
+.search_bar{
+    border: solid 0.5px;
+}
+
+.nav_bar{
+    border: solid 0.5px;
+}
+
+.main_content{
+    display: flex;
+    border: purple solid 0.5px;
+    justify-content: center;
+    /* margin-top: 30px; */
+    flex-wrap: wrap;
+    padding: 0% 12% 12% 12%;
+}
+
+.items{
+    /* border-radius: 0px 30px 0px 0px; */
+    background-color: aqua;
+    padding: 5px;
+    margin: 5px;
+    position: relative;
+}
+
+p{
+    color: #fff;
+    border-radius: 0px 0px 30px 0px;    
+    border: solid;
+    width: 250px;
+    height: 77px;
+    position: absolute;
+    right: 8px;
+    bottom: 10px;
+    
+}
+
+#item1{
+    border-radius: 0px 0px 30px 0px;
+    background-image: url("images/hp_tab_overlay.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 293px;
+    height: 355px;
+}
+
+#item2{
+    border-radius: 0px 0px 30px 0px;
+    background-image: url("images/hp_tab_overlay.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 293px;
+    height: 355px;
+}
+
+#item3{
+    border-radius: 0px 0px 30px 0px;
+    background-image: url("images/hp_tab_overlay.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 293px;
+    height: 355px;
+}
+
+#item4{
+    border-radius: 0px 30px 0px 0px;
+    background-image: url("images/hp_tab_overlay.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 293px;
+    height: 216px;
+}
+
+#item5{
+    border-radius: 0px 30px 0px 0px;
+    background-image: url("images/hp_tab_overlay.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 293px;
+    height: 216px;
+}
+
+#item6{
+    border-radius: 0px 30px 0px 0px;
+    background-image: url("images/hp_tab_overlay.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 293px;
+    height: 216px;
 }
