@@ -177,6 +177,10 @@ body{
     position: relative;
 }
 
+.items a:hover{
+    color: #005ca0;
+}
+
 p{
     color: rgb(255, 255, 255);
     background-color: rgb(153, 150, 150);
@@ -267,6 +271,16 @@ a{
     border-width: 1px;
 }
 
+#item4 a{
+    font-size: smaller;
+    float: left;
+    margin-top: 135px;
+}
+
+#item4 a:hover{
+    colo:#005ca0;
+}
+
 #item5{
     border-radius: 0px 30px 0px 0px;
     background-image: url("images/paz_250x110103131473.jpg"), linear-gradient(rgb(255, 255, 255), rgb(153, 150, 150) 99%);
@@ -289,12 +303,22 @@ a{
     border-width: 1px;
 }
 
+#item5 a{
+    font-size: smaller;
+    float: left;
+    margin-top: 135px;
+}
+
+#item5 a:hover{
+    colo:#005ca0;
+}
+
 #item6{
     border-radius: 0px 30px 0px 0px;
-    background-image: url("images/Untitled-3058756287.jpg"), linear-gradient(rgb(255, 255, 255), rgb(153, 150, 150) 99%);
+    background-image: url("images/Untitled-3058756287.jpg"), linear-gradient(rgb(255, 255, 255), rgb(153, 150, 150) 70%);
     background-repeat: no-repeat;
     background-size: center;
-    background-position-y: 40px;
+    background-position-y: 47px;
     width: 293px;
     height: 216px;
 }
@@ -310,6 +334,17 @@ a{
     padding: 3px;
     border-bottom: 1px solid;
     border-width: 1px;
+}
+
+#item6 span{    
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#item6 a:hover{
+    color:#005ca0;
 }
 
 
