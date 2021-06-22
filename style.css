@@ -12,8 +12,9 @@ body{
 }
 
 .top_header{
-    border: solid 0.5px yellow;
+    /* border: solid 0.5px yellow; */
     background-color: rgb(153, 150, 150) ;
+    background-image: linear-gradient(rgb(153, 150, 150) 90%, rgb(255, 255, 255));
     /* padding: 10px; */
     display: flex;
     flex-direction: column;
@@ -21,16 +22,19 @@ body{
 }
 
 .logo{
-    display: block;
+    display: flex;
     justify-content: flex-end;
+    height: 90px;
+    
 }
 #paz-logo{
-    position: absolute;  
+    position: absolute;
+    height: 80px;
 }
 
 .search_bar{
     /* border: solid 0.5px;  */
-    margin-right:65% ;
+    margin-right:68% ;
     margin-top: 20px ;
     margin-bottom: 0;
     font-size: 12px;
@@ -55,21 +59,50 @@ body{
     display: flex;
     justify-content: center;
     margin-bottom: 0;
-    margin-top: auto;
+    margin-top: -4px;
+    font-weight: bolder;
+}
+
+.ul_nav{
+    display: flex;
+    text-align: center;
+    
+}
+
+.ul_nav li{
+    list-style: none;
+    margin-right: 5px;
 }
 
 .navbar a{
     /* float: right; */
-    font-size: 12px;
+    font-size: 15px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-left: 2px solid ;
 }
 
 .dropdown {
+    margin-top: 20px;
     float: right;
     overflow: hidden;
+    height: 50%;
+    /* transition: all 0.4s ease-out; */
+}
+
+.dropdown a{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    /* padding: 14px 16px; */
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    position: relative;
+    top: 35%;
 }
 
 .dropdown .dropbtn {
@@ -84,7 +117,18 @@ body{
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    color: blue;
+    text-decoration:underline;
+}
+
+.sep{
+    opacity: 0.2;
+    position: relative;
+    right: 14%;
+}
+
+.sep:hover{
+    text-decoration: none;
 }
 
 .dropdown-content {
@@ -93,6 +137,7 @@ body{
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* transition: 0.4s ease-in; */
     z-index: 1;
 }
 
@@ -115,31 +160,35 @@ body{
 
 .main_content{
     display: flex;
-    border: purple solid 0.5px;
+    border: none;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 15px;
     flex-wrap: wrap;
     padding: 0% 12% 0% 12%;
 }
 
 .items{
     /* border-radius: 0px 30px 0px 0px; */
-    background-color: aqua;
+    border: white 1px solid;
+    background: linear-gradient(rgb(255, 255, 255), rgb(153, 150, 150));
+    /* background-image: linear-gradient(rgb(255, 255, 255), rgb(153, 150, 150)); */
     padding: 5px;
     margin: 5px;
     position: relative;
 }
 
 p{
+    color: rgb(255, 255, 255);
     background-color: rgb(153, 150, 150);
     opacity: 0.9;
     border-radius: 0px 0px 30px 0px;    
-    border: solid;
-    width: 250px;
-    height: 77px;
+    border: none;
+    padding-right: 9px;
+    width: 260px;
+    height: 95px;
     position: absolute;
     right: 8px;
-    bottom: 10px;
+    bottom: 15px;
     
 }
 
@@ -149,8 +198,9 @@ p{
     bottom: 0;
     text-align: center;
     background-color: rgb(153, 150, 150);
+    background-image: linear-gradient(to bottom, rgb(241, 241, 241) , rgb(153, 150, 150));;
     justify-content: center;
-    padding: 7px;
+    padding: 10px;
     width: 100%;  
 }
 
@@ -177,7 +227,8 @@ a{
 
 #item2{
     border-radius: 0px 0px 30px 0px;
-    background-image: url("images/hp_tab_overlay.png");
+    border: none;
+    background-image: url("images/Picture-046410251500.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 293px;
@@ -186,7 +237,7 @@ a{
 
 #item3{
     border-radius: 0px 0px 30px 0px;
-    background-image: url("images/hp_tab_overlay.png");
+    background-image: url("images/פזקר_-291_354410564000.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 293px;
@@ -194,28 +245,71 @@ a{
 }
 
 #item4{
+    text-align: center;
     border-radius: 0px 30px 0px 0px;
-    background-image: url("images/hp_tab_overlay.png");
+    background-image: url("images/paz_250x110059890678.jpg"), linear-gradient(rgb(255, 255, 255), rgb(153, 150, 150) 99%);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
     width: 293px;
     height: 216px;
+}
+
+#item4 h3{
+    position: relative;
+    height: 34px;
+    right: 4px;
+    line-height: 34px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 3px;
+    border-bottom: 1px solid;
+    border-width: 1px;
 }
 
 #item5{
     border-radius: 0px 30px 0px 0px;
-    background-image: url("images/hp_tab_overlay.png");
+    background-image: url("images/paz_250x110103131473.jpg"), linear-gradient(rgb(255, 255, 255), rgb(153, 150, 150) 99%);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
     width: 293px;
     height: 216px;
 }
 
+#item5 h3{
+    position: relative;
+    height: 34px;
+    right: 4px;
+    line-height: 34px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 3px;
+    border-bottom: 1px solid;
+    border-width: 1px;
+}
+
 #item6{
     border-radius: 0px 30px 0px 0px;
-    background-image: url("images/hp_tab_overlay.png");
+    background-image: url("images/Untitled-3058756287.jpg"), linear-gradient(rgb(255, 255, 255), rgb(153, 150, 150) 99%);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: center;
+    background-position-y: 40px;
     width: 293px;
     height: 216px;
 }
+
+#item6 h3{
+    position: relative;
+    height: 34px;
+    right: 4px;
+    line-height: 34px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 3px;
+    border-bottom: 1px solid;
+    border-width: 1px;
+}
+
+
