@@ -48,7 +48,7 @@ body{
 }
 
 #search_img{
-    background-image: url(/images/search_button.png);
+    background-image: url("images/search_button.png");
     background-repeat: no-repeat;
     background-size: cover;
 
